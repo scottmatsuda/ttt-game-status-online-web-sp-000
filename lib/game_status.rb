@@ -12,7 +12,6 @@ if board == [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   return false
 end
   
-
 WIN_COMBINATIONS.each do |win_combination|
   
   win_index_1 = win_combination[0]
@@ -27,10 +26,9 @@ WIN_COMBINATIONS.each do |win_combination|
     return win_combination
   end
   
-   if position_1 == "O" && position_2 == "O" && position_3 == "O"
+  if position_1 == "O" && position_2 == "O" && position_3 == "O"
     return win_combination
   end
-  
 end
 
 return false
